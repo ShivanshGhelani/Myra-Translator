@@ -40,7 +40,7 @@
 
 The Universal Translator is deployed and accessible at [https://myra-translator.vercel.app](https://myra-translator.vercel.app)
 
-[![Universal Translator Screenshot](https://raw.githubusercontent.com/ShivanshGhelani/Myra-Translator/main/static/screenshot.png)](https://myra-translator.vercel.app)
+[![Universal Translator Screenshot](/static/screenshot.png)](https://myra-translator.vercel.app)
 
 ## 💻 Tech Stack
 
