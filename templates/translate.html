@@ -292,8 +292,7 @@
             opacity: 1;
             pointer-events: auto;
         }
-        
-        .github-button {
+          .github-button {
             position: fixed;
             top: 1rem;
             right: 1rem;
@@ -315,6 +314,22 @@
             background: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+          /* Mobile adjustments for GitHub button */
+        @media (max-width: 640px) {
+            .github-button {
+                top: auto;
+                bottom: 1rem;
+                left: 1rem;
+                right: auto;
+                z-index: 20; /* Ensure it's above other elements */
+            }
+            
+            /* Ensure translate button doesn't overlap with GitHub button on mobile */
+            .floating-button {
+                right: 1rem;
+                bottom: 1rem;
+            }
         }
 
         .loading-spinner {
@@ -409,12 +424,10 @@
                 width: 52px;
                 height: 52px;
             }
-            
-            .github-button {
-                top: 0.75rem;
-                right: 0.75rem;
+              .github-button {
                 width: 36px;
                 height: 36px;
+                /* Position is set in the specific media query for mobile */
             }
             
             /* Improve spacing on mobile */
@@ -513,7 +526,7 @@
     
     <div class="container mx-auto px-2 sm:px-4 py-4 sm:py-8 relative z-10">
         <div class="max-w-5xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-8 text-white bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">
+            <h1 class="text-3xl md:text-2xl font-bold text-center mb-4 md:mb-8 text-white bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">
                 <i class="fas fa-language mr-2"></i>Universal Translator
             </h1>
               <div class="glass-card rounded-xl p-6 mb-8">
